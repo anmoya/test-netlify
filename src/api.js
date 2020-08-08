@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 
 
 router.post('/', (req, res) => {
-
+    console.log(req.body)
     res.json({
         'hello from post' : 'hi'
     })
