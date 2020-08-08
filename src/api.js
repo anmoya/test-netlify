@@ -15,6 +15,7 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     let data = req.body;
+    console.log(data.toString('utf8'));
     res.json({
         'hello from post' : data.toString('utf8')
     })
