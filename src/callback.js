@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
     })
 })
 
-app.use('/.netlify/functions/api', router);
+app.use('/.netlify/functions/callback', router);
 
 module.exports = app;
 module.exports.handler = serverless(app);
